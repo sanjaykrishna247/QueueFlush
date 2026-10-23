@@ -1,0 +1,51 @@
+[
+  {
+    "device_id": "AMB-01",
+    "vehicle_type": "ambulance",
+    "reg_no": "TN 49 AB 1084",
+    "secret_key": "a3f8c2e1d94b76052e8a1c3f4d2b9e0a7c5f1d8b3e6a2c9f4d7b0e3a6c8f1d4",
+    "active": true
+  },
+  {
+    "device_id": "AMB-02",
+    "vehicle_type": "ambulance",
+    "reg_no": "TN 49 AB 2271",
+    "secret_key": "b9e3a6c1f4d7b0e8a2c5f9d2b7e4a1c8f5d3b6e9a0c4f7d1b5e8a3c6f0d4b2",
+    "active": true
+  },
+  {
+    "device_id": "AMB-03",
+    "vehicle_type": "ambulance",
+    "reg_no": "TN 49 CD 3389",
+    "secret_key": "c5f2d9b6e3a0c8f4d1b7e5a2c9f6d3b0e8a4c1f7d2b8e6a3c0f5d9b1e4a7c2",
+    "active": true
+  },
+  {
+    "device_id": "AMB-04",
+    "vehicle_type": "ambulance",
+    "reg_no": "TN 49 EF 4512",
+    "secret_key": "d1b8e5a2c6f3d9b4e0a7c3f8d5b2e9a6c1f4d8b3e7a0c5f2d6b9e4a1c8f5d3",
+    "active": true
+  },
+  {
+    "device_id": "FIRE-01",
+    "vehicle_type": "fire_engine",
+    "reg_no": "TN 49 GH 1001",
+    "secret_key": "e7a4c1f8d5b2e0a6c3f9d4b8e2a5c0f6d1b9e3a7c4f2d8b5e1a0c6f3d7b4e9",
+    "active": true
+  },
+  {
+    "device_id": "FIRE-02",
+    "vehicle_type": "fire_engine",
+    "reg_no": "TN 49 GH 1002",
+    "secret_key": "f3d0b7e4a1c8f5d2b9e6a3c0f7d4b1e8a5c2f9d6b0e7a4c1f8d5b2e9a6c3f0",
+    "active": true
+  },
+  {
+    "device_id": "UNKNOWN-99",
+    "vehicle_type": "unknown",
+    "reg_no": "TN 00 ZZ 0000",
+    "secret_key": "0000000000000000000000000000000000000000000000000000000000000000",
+    "active": false
+  }
+]

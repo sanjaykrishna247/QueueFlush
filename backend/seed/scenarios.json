@@ -1,0 +1,289 @@
+[
+  {
+    "slug": "rush-hour-hospital-road",
+    "name": "Rush Hour — Hospital Road",
+    "description": "Peak morning rush. 6 cars, 1 bus, 1 truck queued at the Hospital Road x Gandhi Salai junction. Classic scenario demonstrating maximum time savings.",
+    "tags": ["peak-hour", "heavy-vehicles", "demo", "hospital-road"],
+    "params": {
+      "N": 8,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 2,
+      "distance_m": 300,
+      "speed_kmh": 110,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 6},
+      {"type": "bus", "count": 1},
+      {"type": "truck", "count": 1}
+    ],
+    "seed": 101,
+    "is_demo": true
+  },
+  {
+    "slug": "light-traffic-night",
+    "name": "Light Traffic — Night Shift",
+    "description": "Late night low-traffic scenario. 3 cars, clear roads, ambulance at high speed. Tests baseline performance under ideal conditions.",
+    "tags": ["night", "low-traffic"],
+    "params": {
+      "N": 3,
+      "t_delay": 0.6,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 0,
+      "distance_m": 300,
+      "speed_kmh": 140,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 3}
+    ],
+    "seed": 102,
+    "is_demo": false
+  },
+  {
+    "slug": "monsoon-evening",
+    "name": "Monsoon Evening",
+    "description": "Heavy rain degrades driver reaction times (1.25x factor). 9 vehicles in queue. Tests weather-aware prediction accuracy.",
+    "tags": ["rain", "wet", "peak-hour"],
+    "params": {
+      "N": 9,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "wet",
+      "heavy_count": 1,
+      "distance_m": 300,
+      "speed_kmh": 90,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 6},
+      {"type": "bus", "count": 1},
+      {"type": "auto-rickshaw", "count": 2}
+    ],
+    "seed": 103,
+    "is_demo": false
+  },
+  {
+    "slug": "foggy-dawn-highway",
+    "name": "Foggy Dawn — Highway Approach",
+    "description": "Dense fog with 1.35x reaction factor. 6 vehicles at a highway intersection. Demonstrates how our system outperforms even more in adverse visibility.",
+    "tags": ["fog", "highway", "dawn"],
+    "params": {
+      "N": 6,
+      "t_delay": 0.9,
+      "t_margin": 1.0,
+      "weather": "fog",
+      "heavy_count": 1,
+      "distance_m": 350,
+      "speed_kmh": 80,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 4},
+      {"type": "truck", "count": 1},
+      {"type": "motorcycle", "count": 1}
+    ],
+    "seed": 104,
+    "is_demo": false
+  },
+  {
+    "slug": "bus-depot-exit",
+    "name": "Bus Depot Exit — Heavy Mix",
+    "description": "Junction near a bus depot. 3 buses + 1 truck in a 7-vehicle queue. Stress-tests the heavy-vehicle startup delay model.",
+    "tags": ["heavy-vehicles", "wet", "depot"],
+    "params": {
+      "N": 7,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "wet",
+      "heavy_count": 4,
+      "distance_m": 300,
+      "speed_kmh": 100,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 3},
+      {"type": "bus", "count": 3},
+      {"type": "truck", "count": 1}
+    ],
+    "seed": 105,
+    "is_demo": false
+  },
+  {
+    "slug": "school-zone-pedestrian",
+    "name": "School Zone — Pedestrian Conflict",
+    "description": "School dismissal time. Pedestrian phase active with only 2.0s remaining. Triggers SAFETY HOLD — predictive system waits for ped clearance before issuing early GREEN.",
+    "tags": ["pedestrian", "school-zone", "safety-hold", "demo"],
+    "params": {
+      "N": 5,
+      "t_delay": 0.9,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 0,
+      "distance_m": 250,
+      "speed_kmh": 90,
+      "ped_active": true,
+      "ped_remaining_s": 2.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 4},
+      {"type": "motorcycle", "count": 1}
+    ],
+    "seed": 106,
+    "is_demo": true
+  },
+  {
+    "slug": "market-gridlock",
+    "name": "Market Area Gridlock",
+    "description": "Crowded market junction with 12 vehicles and high reaction delay (1.2s). Tests maximum queue capacity with slower drivers.",
+    "tags": ["gridlock", "peak-hour", "market"],
+    "params": {
+      "N": 12,
+      "t_delay": 1.2,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 2,
+      "distance_m": 250,
+      "speed_kmh": 70,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 7},
+      {"type": "bus", "count": 1},
+      {"type": "truck", "count": 1},
+      {"type": "motorcycle", "count": 2},
+      {"type": "auto-rickshaw", "count": 1}
+    ],
+    "seed": 107,
+    "is_demo": false
+  },
+  {
+    "slug": "too-close-partial-flush",
+    "name": "Partial Flush — Ambulance Too Close",
+    "description": "Fast ambulance (150 km/h) at short distance (120m). ETA < T_clear → PARTIAL FLUSH mode. Demonstrates graceful degradation while still outperforming conventional.",
+    "tags": ["partial-flush", "high-speed", "demo"],
+    "params": {
+      "N": 10,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 1,
+      "distance_m": 120,
+      "speed_kmh": 150,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 8},
+      {"type": "bus", "count": 1},
+      {"type": "auto-rickshaw", "count": 1}
+    ],
+    "seed": 108,
+    "is_demo": false
+  },
+  {
+    "slug": "telemetry-dropout",
+    "name": "Telemetry Dropout — Fail-Safe Demo",
+    "description": "Live telemetry feed is interrupted at t=2.5s (simulated sensor failure). After 2s without heartbeat, system reverts to fixed-timer FAIL-SAFE mode automatically.",
+    "tags": ["fail-safe", "telemetry", "demo", "safety"],
+    "params": {
+      "N": 8,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 0,
+      "distance_m": 300,
+      "speed_kmh": 110,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 6},
+      {"type": "bus", "count": 1},
+      {"type": "truck", "count": 1}
+    ],
+    "telemetry_drop_at": 2.5,
+    "seed": 109,
+    "is_demo": true
+  },
+  {
+    "slug": "fire-engine-heavy",
+    "name": "Fire Engine Response",
+    "description": "Fire engine (longer vehicle, 1.0 m/s² acceleration). 6 vehicles queued. Tests heavy emergency vehicle physics.",
+    "tags": ["fire-engine", "heavy-vehicle"],
+    "params": {
+      "N": 6,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 2,
+      "distance_m": 280,
+      "speed_kmh": 70,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 3},
+      {"type": "bus", "count": 1},
+      {"type": "truck", "count": 1},
+      {"type": "auto-rickshaw", "count": 1}
+    ],
+    "seed": 110,
+    "is_demo": false
+  },
+  {
+    "slug": "elderly-driver-delays",
+    "name": "Elderly Driver Delays",
+    "description": "High per-driver reaction time (1.5s). Demonstrates how our system adapts prediction for elderly-majority traffic zones.",
+    "tags": ["elderly-zone", "slow-reaction"],
+    "params": {
+      "N": 6,
+      "t_delay": 1.5,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 0,
+      "distance_m": 300,
+      "speed_kmh": 90,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 5},
+      {"type": "motorcycle", "count": 1}
+    ],
+    "seed": 111,
+    "is_demo": false
+  },
+  {
+    "slug": "spoofed-signal-attack",
+    "name": "Spoofed Signal Attack — Security Demo",
+    "description": "An unknown device (UNKNOWN-99) attempts to trigger emergency preemption with a forged HMAC token. System detects and rejects the spoofed signal. Legitimate AMB-01 request succeeds.",
+    "tags": ["security", "spoofing", "demo"],
+    "params": {
+      "N": 6,
+      "t_delay": 0.8,
+      "t_margin": 1.0,
+      "weather": "dry",
+      "heavy_count": 0,
+      "distance_m": 300,
+      "speed_kmh": 110,
+      "ped_active": false,
+      "ped_remaining_s": 0.0
+    },
+    "vehicle_mix": [
+      {"type": "car", "count": 5},
+      {"type": "motorcycle", "count": 1}
+    ],
+    "seed": 112,
+    "is_demo": false
+  }
+]

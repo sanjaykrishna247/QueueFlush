@@ -1,0 +1,137 @@
+[
+  {
+    "code": "INT-01",
+    "name": "Hospital Road × Gandhi Salai",
+    "lat": 10.7821,
+    "lng": 79.1312,
+    "approach_distance_m": 300,
+    "ped_cycle_s": 30,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-02",
+    "name": "Bus Stand Junction",
+    "lat": 10.7845,
+    "lng": 79.1298,
+    "approach_distance_m": 250,
+    "ped_cycle_s": 25,
+    "controller_type": "2070"
+  },
+  {
+    "code": "INT-03",
+    "name": "Collectorate Circle",
+    "lat": 10.7863,
+    "lng": 79.1334,
+    "approach_distance_m": 350,
+    "ped_cycle_s": 35,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-04",
+    "name": "Market Road × Rajaji Street",
+    "lat": 10.7802,
+    "lng": 79.1278,
+    "approach_distance_m": 220,
+    "ped_cycle_s": 28,
+    "controller_type": "2070"
+  },
+  {
+    "code": "INT-05",
+    "name": "Nehru Nagar Signal",
+    "lat": 10.7889,
+    "lng": 79.1345,
+    "approach_distance_m": 280,
+    "ped_cycle_s": 30,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-06",
+    "name": "School Zone Crossing",
+    "lat": 10.7815,
+    "lng": 79.1367,
+    "approach_distance_m": 200,
+    "ped_cycle_s": 35,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-07",
+    "name": "Medical College Gate",
+    "lat": 10.7901,
+    "lng": 79.1289,
+    "approach_distance_m": 320,
+    "ped_cycle_s": 25,
+    "controller_type": "2070"
+  },
+  {
+    "code": "INT-08",
+    "name": "Railway Overbridge West",
+    "lat": 10.7774,
+    "lng": 79.1301,
+    "approach_distance_m": 380,
+    "ped_cycle_s": 20,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-09",
+    "name": "Patel Nagar T-Junction",
+    "lat": 10.7856,
+    "lng": 79.1256,
+    "approach_distance_m": 260,
+    "ped_cycle_s": 30,
+    "controller_type": "2070"
+  },
+  {
+    "code": "INT-10",
+    "name": "ESI Hospital Approach",
+    "lat": 10.7912,
+    "lng": 79.1378,
+    "approach_distance_m": 300,
+    "ped_cycle_s": 32,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-11",
+    "name": "Bypass Road × NH-45C",
+    "lat": 10.7761,
+    "lng": 79.1423,
+    "approach_distance_m": 400,
+    "ped_cycle_s": 20,
+    "controller_type": "2070"
+  },
+  {
+    "code": "INT-12",
+    "name": "Police Station Circle",
+    "lat": 10.7878,
+    "lng": 79.1245,
+    "approach_distance_m": 230,
+    "ped_cycle_s": 28,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-13",
+    "name": "Ambedkar Nagar Signal",
+    "lat": 10.7834,
+    "lng": 79.1412,
+    "approach_distance_m": 270,
+    "ped_cycle_s": 33,
+    "controller_type": "2070"
+  },
+  {
+    "code": "INT-14",
+    "name": "Old Court Road Junction",
+    "lat": 10.7798,
+    "lng": 79.1354,
+    "approach_distance_m": 240,
+    "ped_cycle_s": 30,
+    "controller_type": "NEMA TS2"
+  },
+  {
+    "code": "INT-15",
+    "name": "Heart Institute Gate",
+    "lat": 10.7923,
+    "lng": 79.1267,
+    "approach_distance_m": 210,
+    "ped_cycle_s": 25,
+    "controller_type": "2070"
+  }
+]
